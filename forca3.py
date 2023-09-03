@@ -2,7 +2,7 @@
 arquivo.write('jean carlos')
 arquivo.close()
 testte = open('jean.txt', 'w')
-testte.write('Jean carlos dos santos rocha \n ')'''
+testte.write('Jean carlos\n ')'''
 #arquivo = open('aquivos.txt', 'a')
 #arquivo.read()
 #arquivo.write('ivr d dnre9reuinejd vks.akbnrieaurnv')

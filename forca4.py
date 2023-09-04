@@ -42,19 +42,26 @@ def jogar():
     acertou = False
     erros = 0
 
+    alfabetos = []
+
     while (not acertou and not enforcou):
 
         chute = pede_chute()
+        alfabetos.append(chute)
 
         if (chute in palavra_secreta):
             marca_chute_correto(chute, letras_acertadas, palavra_secreta)
         else:
             erros += 1
-
+            
         enforcou = erros == 6
         acertou = '_' not in letras_acertadas
-
+        
+        
+        
+        print(alfabetos)
         print(letras_acertadas)
+        print(erros)
 
     if(acertou):
         imprime_mensagem_vencedor()
